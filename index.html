@@ -1,0 +1,257 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ROBOTIC CRAZE</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #071426;
+  color: white;
+}
+
+header {
+  background: #102b49;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 2px solid #00eaff;
+}
+
+.logo {
+  color: #00eaff;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 15px;
+  background: #091c32;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #00eaff;
+}
+
+.hero {
+  min-height: 420px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 30px 15px;
+  background: linear-gradient(135deg, #071426, #123d63);
+}
+
+.hero h1 {
+  font-size: 42px;
+  color: #00eaff;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  background: #00d9f5;
+  color: #071426;
+  padding: 13px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+section {
+  padding: 55px 20px;
+  text-align: center;
+}
+
+.section-title {
+  color: #00eaff;
+  font-size: 30px;
+  margin-bottom: 25px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.card {
+  background: #122e4b;
+  padding: 25px;
+  border-radius: 12px;
+  border: 1px solid #17618a;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-7px);
+  border-color: #00eaff;
+}
+
+.card h3 {
+  color: #00eaff;
+  margin-bottom: 12px;
+}
+
+.card p {
+  line-height: 1.6;
+}
+
+.about {
+  background: #0c2037;
+}
+
+.about p {
+  max-width: 700px;
+  margin: auto;
+  line-height: 1.8;
+}
+
+.youtube {
+  background: #102b49;
+}
+
+footer {
+  background: #04101e;
+  padding: 25px;
+  text-align: center;
+  line-height: 2;
+}
+
+footer a {
+  color: #00eaff;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">🤖 ROBOTIC CRAZE</div>
+  <p>Imagine | Create | Innovate</p>
+</header>
+
+<nav>
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#projects">Projects</a>
+  <a href="#learn">Learn</a>
+  <a href="#youtube">YouTube</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<div class="hero" id="home">
+  <h1>WELCOME TO ROBOTIC CRAZE</h1>
+  <p>Explore the Future of Robotics and Technology!</p>
+  <a href="#projects" class="btn">Explore Projects</a>
+</div>
+
+<section class="about" id="about">
+  <h2 class="section-title">About Us</h2>
+  <p>
+    Welcome to Robotic Craze! This is a place for
+    robotics lovers and technology learners.
+    Discover exciting electronics projects,
+    Arduino experiments, ESP32, sensors and robots.
+    Let's learn and innovate together!
+  </p>
+</section>
+
+<section id="projects">
+  <h2 class="section-title">Our Projects</h2>
+
+  <div class="cards">
+    <div class="card">
+      <h3>🚗 Robot Cars</h3>
+      <p>Discover motor control and robot car projects.</p>
+    </div>
+
+    <div class="card">
+      <h3>📡 GPS Tracking</h3>
+      <p>Explore GPS and live tracking technology.</p>
+    </div>
+
+    <div class="card">
+      <h3>💡 LED Projects</h3>
+      <p>Learn electronics with LED experiments.</p>
+    </div>
+
+    <div class="card">
+      <h3>🔧 Arduino</h3>
+      <p>Build exciting projects using Arduino boards.</p>
+    </div>
+
+    <div class="card">
+      <h3>⚡ ESP32</h3>
+      <p>Explore smart devices and IoT technology.</p>
+    </div>
+
+    <div class="card">
+      <h3>📟 Sensors</h3>
+      <p>Learn about ultrasonic, IR and other sensors.</p>
+    </div>
+  </div>
+</section>
+
+<section id="learn" class="about">
+  <h2 class="section-title">Learn Robotics</h2>
+  <p>
+    Start your robotics journey with simple tutorials.
+    Learn about circuits, motors, LEDs, sensors,
+    microcontrollers and programming.
+  </p>
+</section>
+
+<section class="youtube" id="youtube">
+  <h2 class="section-title">Our YouTube Channel</h2>
+  <p>Watch our latest robotics videos and experiments!</p>
+  <br>
+  <a class="btn"
+     href="https://www.youtube.com/"
+     target="_blank">
+     Visit YouTube
+  </a>
+</section>
+
+<section id="contact">
+  <h2 class="section-title">Contact Us</h2>
+  <p>Have an interesting robotics idea?</p>
+  <p>Let's explore technology together!</p>
+</section>
+
+<footer>
+  <h3>🤖 ROBOTIC CRAZE</h3>
+  <p>Imagine | Create | Innovate</p>
+  <p>© 2026 Robotic Craze. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
